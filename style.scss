@@ -1,0 +1,223 @@
+@import 'mobile';
+
+// Variables
+
+$main-color: hsl(179, 62%, 43%);
+$secondary-color: hsl(71, 73%, 54%);
+$main-text-color: hsl(218, 22%, 67%);
+$secondary-text-color: hsl(204, 43%, 93%);
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+}
+
+.container {
+  height: 100vh;
+  max-width: 1440px;
+  background: #e6eff6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .main-price-box {
+    height: 80%;
+    width: 50%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+    .upper-section {
+      height: 45%;
+      padding: 3.125rem;
+
+      .main-heading {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: $main-color;
+        padding-bottom: 0.9375rem;
+      }
+
+      .sub-heading {
+        font-weight: 700;
+        color: $secondary-color;
+        padding-bottom: 0.9375rem;
+        font-size: 1.1rem;
+      }
+
+      p {
+        line-height: 1.7;
+        color: $main-text-color;
+        font-weight: 700;
+        padding-right: 1.875rem;
+      }
+    }
+
+    .lower-section {
+      display: flex;
+      height: 55%;
+      width: 100%;
+      color: $secondary-text-color;
+
+      .left-section {
+        background-color: $main-color;
+        width: 50%;
+        padding: 2.1875rem 1.875rem;
+
+        h4 {
+          font-size: 1.4rem;
+          font-weight: 700;
+          padding-top: 0.625rem;
+          padding-bottom: 1.25rem;
+        }
+
+        h2 {
+          font-size: 2.5rem;
+          position: relative;
+
+          .month-text {
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: #6bdddb;
+            position: absolute;
+            bottom: 0.8125rem;
+            left: 5.625rem;
+          }
+        }
+
+        p {
+          padding-top: 0.625rem;
+          font-size: 1.1rem;
+        }
+
+        .btn {
+          display: block;
+          margin: 1.875rem auto;
+          text-decoration: none;
+          color: $secondary-text-color;
+          padding: 1.0625rem 3.125rem;
+          text-align: center;
+          font-size: 1.2rem;
+          font-weight: 700;
+          background-color: $secondary-color;
+          border-radius: 5px;
+        }
+      }
+
+      .right-section {
+        background-color: #4abebd;
+        width: 50%;
+        padding: 2.5rem;
+
+        h4 {
+          font-size: 1.65rem;
+          padding-bottom: 1.25rem;
+        }
+
+        p {
+          line-height: 1.5;
+          padding-right: 1.875rem;
+          color: #adf9fa;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1174px) {
+  .container {
+    .main-price-box {
+      width: 75%;
+
+      .upper-section {
+        padding: 2rem;
+      }
+
+      .lower-section {
+        .left-section {
+          padding: 1.25rem;
+        }
+
+        .right-section {
+          padding: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 416px) and (max-width: 768px) {
+  .container {
+    .main-price-box {
+      width: 90%;
+      height: 85%;
+
+      .upper-section {
+        padding: 1.5rem;
+      }
+
+      .lower-section {
+        .left-section {
+          padding: 0.75rem 1rem;
+
+          .btn {
+            padding: 0.75rem 1.5rem;
+            margin: 1rem auto;
+          }
+        }
+
+        .right-section {
+          padding: 1.25rem;
+
+          h4 {
+            padding-bottom: 1rem;
+          }
+
+          p {
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 415px) {
+  .container {
+    width: 100vw;
+    height: 100%;
+    padding: 1.25rem 0;
+
+    .main-price-box {
+      width: 95%;
+      height: 90%;
+
+      .upper-section {
+        padding: 1.5rem;
+      }
+
+      .lower-section {
+        display: block;
+
+        .left-section {
+          width: 100%;
+
+          .btn {
+            margin-bottom: 0;
+          }
+        }
+
+        .right-section {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

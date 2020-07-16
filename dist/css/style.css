@@ -1,0 +1,191 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+}
+
+.container {
+  height: 100vh;
+  max-width: 1440px;
+  background: #e6eff6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .main-price-box {
+  height: 80%;
+  width: 50%;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container .main-price-box .upper-section {
+  height: 45%;
+  padding: 3.125rem;
+}
+
+.container .main-price-box .upper-section .main-heading {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #2ab2af;
+  padding-bottom: 0.9375rem;
+}
+
+.container .main-price-box .upper-section .sub-heading {
+  font-weight: 700;
+  color: #c0df34;
+  padding-bottom: 0.9375rem;
+  font-size: 1.1rem;
+}
+
+.container .main-price-box .upper-section p {
+  line-height: 1.7;
+  color: #98a6bd;
+  font-weight: 700;
+  padding-right: 1.875rem;
+}
+
+.container .main-price-box .lower-section {
+  display: flex;
+  height: 55%;
+  width: 100%;
+  color: #e5eff5;
+}
+
+.container .main-price-box .lower-section .left-section {
+  background-color: #2ab2af;
+  width: 50%;
+  padding: 2.1875rem 1.875rem;
+}
+
+.container .main-price-box .lower-section .left-section h4 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding-top: 0.625rem;
+  padding-bottom: 1.25rem;
+}
+
+.container .main-price-box .lower-section .left-section h2 {
+  font-size: 2.5rem;
+  position: relative;
+}
+
+.container .main-price-box .lower-section .left-section h2 .month-text {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #6bdddb;
+  position: absolute;
+  bottom: 0.8125rem;
+  left: 5.625rem;
+}
+
+.container .main-price-box .lower-section .left-section p {
+  padding-top: 0.625rem;
+  font-size: 1.1rem;
+}
+
+.container .main-price-box .lower-section .left-section .btn {
+  display: block;
+  margin: 1.875rem auto;
+  text-decoration: none;
+  color: #e5eff5;
+  padding: 1.0625rem 3.125rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  background-color: #c0df34;
+  border-radius: 5px;
+}
+
+.container .main-price-box .lower-section .right-section {
+  background-color: #4abebd;
+  width: 50%;
+  padding: 2.5rem;
+}
+
+.container .main-price-box .lower-section .right-section h4 {
+  font-size: 1.65rem;
+  padding-bottom: 1.25rem;
+}
+
+.container .main-price-box .lower-section .right-section p {
+  line-height: 1.5;
+  padding-right: 1.875rem;
+  color: #adf9fa;
+}
+
+@media (min-width: 769px) and (max-width: 1174px) {
+  .container .main-price-box {
+    width: 75%;
+  }
+  .container .main-price-box .upper-section {
+    padding: 2rem;
+  }
+  .container .main-price-box .lower-section .left-section {
+    padding: 1.25rem;
+  }
+  .container .main-price-box .lower-section .right-section {
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 416px) and (max-width: 768px) {
+  .container .main-price-box {
+    width: 90%;
+    height: 85%;
+  }
+  .container .main-price-box .upper-section {
+    padding: 1.5rem;
+  }
+  .container .main-price-box .lower-section .left-section {
+    padding: 0.75rem 1rem;
+  }
+  .container .main-price-box .lower-section .left-section .btn {
+    padding: 0.75rem 1.5rem;
+    margin: 1rem auto;
+  }
+  .container .main-price-box .lower-section .right-section {
+    padding: 1.25rem;
+  }
+  .container .main-price-box .lower-section .right-section h4 {
+    padding-bottom: 1rem;
+  }
+  .container .main-price-box .lower-section .right-section p {
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 415px) {
+  .container {
+    width: 100vw;
+    height: 100%;
+    padding: 1.25rem 0;
+  }
+  .container .main-price-box {
+    width: 95%;
+    height: 90%;
+  }
+  .container .main-price-box .upper-section {
+    padding: 1.5rem;
+  }
+  .container .main-price-box .lower-section {
+    display: block;
+  }
+  .container .main-price-box .lower-section .left-section {
+    width: 100%;
+  }
+  .container .main-price-box .lower-section .left-section .btn {
+    margin-bottom: 0;
+  }
+  .container .main-price-box .lower-section .right-section {
+    width: 100%;
+  }
+}
